@@ -18,3 +18,10 @@ class HomeView(View):
 		form = ProductForm(request.POST)
 		form.save()
 		return redirect('productos:todos')
+
+class ProductDetailView(View):
+    def get(self, request, id):
+        template_name = "productos/detalle.html"
+        post = Product.objects.get(pk = id)
+        context = {"posts":post}
+        return render(request, template_name, context)

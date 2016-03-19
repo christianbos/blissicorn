@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>FaceBatch8</title>
+		<title>Unicorn Investors</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
 
@@ -18,11 +18,13 @@
 		  <h1>YES</h1>
 
 		  {% for product in productos %}
-			{# <a href="{{post.get_absolute_url}}"> #}
-			<h2>{{product.nombre}}</h2>
+			<a href="{{product.get_absolute_url}}">
+			<h4>Nombre: {{product.nombre}}</h4>
 			</a>
-			<p>{{product.modelo}}</p>
-			<p>{{product.descripcion}}</p>
+			<p>Modelo: {{product.modelo}}</p>
+			<p>Descripción: {{product.descripcion}}</p>
+			<p>Precio: {{product.precio}}</p>
+			<p>Stock: {{product.stock}}</p>
 		  {%endfor%}
 
 		{% block content %}

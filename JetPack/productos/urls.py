@@ -7,5 +7,10 @@ urlpatterns = [
     	views.HomeView.as_view(),
     	name = 'todos'
     	),
+
+	url(r'^detalle/(?P<id>\d+)',
+		views.ProductDetailView.as_view(),
+		name = 'detalle'
+		),
     
 ]
