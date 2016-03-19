@@ -17,6 +17,14 @@
 	<body>
 		  <h1>YES</h1>
 
+		  {% for product in productos %}
+			{# <a href="{{post.get_absolute_url}}"> #}
+			<h2>{{product.nombre}}</h2>
+			</a>
+			<p>{{product.modelo}}</p>
+			<p>{{product.descripcion}}</p>
+		  {%endfor%}
+
 		{% block content %}
 
 		{% endblock content%}
