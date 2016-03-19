@@ -1,0 +1,21 @@
+body {
+​
+  background-color: #91b4fc;
+}
+​
+#navbar-primary.navbar-default {
+  background: #6699FF;
+  border: none;
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      display: inline-block;
+      float: none;
+      > a {
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+    }
+  }
+}
