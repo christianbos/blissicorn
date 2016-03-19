@@ -15,11 +15,11 @@
 	</head>
 
 	<body>
-		  <h1>YES</h1>
+		  <h1 align="center">JetPacks Blissicorn</h1>
 
 		  {% for product in productos %}
 			<a href="{{product.get_absolute_url}}">
-			<h4>Nombre: {{product.nombre}}</h4>
+			<h4>{{product.nombre}}</h4>
 			</a>
 			<p>Modelo: {{product.modelo}}</p>
 			<p>Descripción: {{product.descripcion}}</p>
