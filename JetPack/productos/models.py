@@ -13,3 +13,6 @@ class Product(models.Model):
 
 	def _str_(self):
 		return self.nombre
+
+	def get_absolute_url(self):
+		return reverse('productos:detalle', args = [self.pk])

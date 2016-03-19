@@ -22,6 +22,8 @@ class HomeView(View):
 class ProductDetailView(View):
     def get(self, request, id):
         template_name = "productos/detalle.html"
-        post = Product.objects.get(pk = id)
-        context = {"posts":post}
+        productos = Product.objects.get(pk = id)
+        context = {
+        'product' : productos,
+        }
         return render(request, template_name, context)
